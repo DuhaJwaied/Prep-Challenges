@@ -18,8 +18,6 @@
 //  [30, 64, 99, 51]
 //  
 
-
-
 const arrInc = (arr) => {
     let result = [];
     for (let i = 0; i < result.length; i++) {
@@ -117,31 +115,32 @@ const roundDecimals = (arr) => {
 //     }
 // ]
 //
+
+
 const employeesBonus = (arr) => {
     let salary;
     let Sign = "$";
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].workHours > 8) {
             salary = arr[i].salary;
-            salary = salary.replace(Sign, '');
-            salary = (salary);
             salary =salary + 100;
-            salary += Sign;
+           
             arr[i].salary = salary;
         } 
+
         if (arr[i].workHours <= 8)
         {
             salary = arr[i].salary;
-            salary = salary.replace(Sign, '');
-            salary = (salary);
+            
             salary =salary+ 50;
-            salary += Sign;
+           
             arr[i].salary = salary;
 
         }
     }
     return arr;
 }
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
